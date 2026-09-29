@@ -1,0 +1,40 @@
+\documentclass[10pt]{article}
+
+\usepackage{enumerate}
+\usepackage[ruled,vlined,linesnumbered]{algorithm2e}
+
+
+\begin{document}
+	
+\begin{center}
+	\bf{Instituto de Computação - UFRJ
+		
+		Programação Orientada a Objetos (2025-1)
+		
+		12 de junho de 2025}
+\end{center}
+	
+\bigskip
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Trabalho 3 - Corrida}
+
+\begin{itemize}
+	
+	\item Implementar a classe {\em Robot}.
+	
+	\item Considere um robô que encontra-se em um circuito de corrida de dimensões $lines \times columns$ tais que $lines$ e $columns$ são números positivos.
+	
+	\item Essa classe deve ter o método {\em move}, o qual, ao ser chamado, deve retornar UP, DOWN, LEFT, RIGHT ou STOP. Esse retorno significa o movimento que o robô deseja fazer para uma posição vizinha a atual na matriz que representa a sala.
+		
+	\item Inicialmente, o robô encontra-se na posição (1,1).
+	
+	\item Ele deve realizar 5 voltas no circuito com o menor número de movimentos.
+	
+	\item A linha de chegada é na posição $(\lfloor\frac{lines}{2}\rfloor,2)$.
+	
+	\item A localização atual do robô é representada por um par $(\ell', c')$ tal que $1 \le \ell' \le qttyLines$ e $1 \le c' \le qttyColumns$. O robô tem um GPS, para o qual ele pode perguntar qual a sua locali\-zação atual usando os métodos $getLine$ e $getColumn$. Esses métodos têm como parâmetro um inteiro que representa o {\em id} do robô.
+	
+\end{itemize}
+
+\end{document}
